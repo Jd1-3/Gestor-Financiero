@@ -9,21 +9,16 @@
 <body>
     <heading> 
         <h1>Gestor Financiero</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Login.html">Mis gastos</a></li>
-                <li><a href="Login.html">Mis Ingresos</a></li>
-            </ul>
-        </nav>
+        <br>
+        {% include 'blocks/barra_navegacion.html' %}
     </heading>
-    <main> 
+    <main>
         <form> 
             <label for="">Nombre</label>
                 <input type="text">
                 <label for="">Fecha</label>
                 <input type="date">
-                <label for="">Monto</label>
+                <label for="">Cantidad</label>
                 <input type="number">
                 <label for="">Descripcion</label>
                 <input type="text">

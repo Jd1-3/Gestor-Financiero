@@ -3,28 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Estilos/index.css" ref = "stylesheet" type = "text/css">
     <title>Gestor Financiero</title>
 </head>
 <body>
     <heading> 
         <h1>Gestor Financiero</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Login.html">Mis gastos</a></li>
-                <li><a href="Login.html">Mis Ingresos</a></li>
-            </ul>
-        </nav>
     </heading>
+    <br>
     <main> 
-        <hr>
-        <h2>Bienvenido </h2>
+        <h2>Bienvenido!</h2>
 
+        {% include 'blocks/barra_navegacion.html' %}
 
-
+        <br>
+        <table name = "Presentacion">
+            <tr>
+                <th>ID</th>
+                <th>Año</th>
+                <th>Mes</th>
+                <th>Ingresos Totales</th>
+                <th>Gastos Totales</th>
+                <th>Dinero Restante</th>
+            </tr>
+            <tr>
+                <td>
+                1
+                </td>
+                <td>
+                1    
+                </td>
+                <td>
+                2
+                </td>
+                <td>
+                3
+                </td>
+                <td>
+                4
+                </td>
+                <td>
+                5
+                </td>
+            </tr>
+        </table>
+        <br>
     </main>
+    <br>
     <footer>
+
+        ©️ Gestor de Finanzas by Juan Diego Pineda Garcia - Kevin Andres Fuentes Lopez
         
     </footer>
 </body>

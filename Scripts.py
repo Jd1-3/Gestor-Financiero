@@ -1,11 +1,10 @@
 from flask import Flask, render_template, request
-import numpy as np
+
 
 app = Flask(__name__)
 
 @app.route("/")
 def raiz():
-    
     return render_template("index.html")
 
 @app.route("/Gastos", methods=["POST","GET"])
