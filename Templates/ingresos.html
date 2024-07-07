@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Estilos/ingresos.css" ref = "stylesheet" type = "text/css">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ingresos.css')}}">
     <title>Gestor Financiero</title>
 </head>
 <body>
@@ -14,9 +13,30 @@
         {% include 'blocks/barra_navegacion.html' %}
     </heading>
     <main>
-        
+        <br>
+        <h2>Ingresos</h2>
+        <br>
+        <button>Crear</button>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Fuente de Ingreso</th>
+                <th>Valor</th>
+                <th>fecha</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <br>
+        <button>Sigiuente</button>
     </main>
+    <br>
     <footer>
+        
         ©️ Gestor de Finanzas by Juan Diego Pineda Garcia - Kevin Andres Fuentes Lopez
     </footer>
 </body>
