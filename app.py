@@ -9,33 +9,16 @@ def raiz():
     
     return render_template("index.html")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@app.route("/Gastos", methods=["POST","GET"])
+@app.route("/Gastos", methods=["GET"])
 def gastos():
     
+        
     return render_template("gastos.html")
 
-@app.route("/Ingresos", methods=["POST","GET"])
+
+
+
+@app.route("/Ingresos", methods=["GET"])
 def ingresos():
     
     return render_template("ingresos.html")
