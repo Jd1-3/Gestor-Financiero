@@ -1,8 +1,8 @@
-import mysql.connector
+# import mysql.connector
 
-db_connection = mysql.connector.connect(
-    user = 'root', 
-    password = '', 
-    host = 'localhost',
-    database = 'gestor_financiero'
-)
+# db_connection = mysql.connector.connect(
+#     user = 'root', 
+#     password = '', 
+#     host = 'localhost',
+#     database = 'gestor_financiero'
+# )
