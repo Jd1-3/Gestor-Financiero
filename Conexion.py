@@ -6,4 +6,3 @@ db_connection = mysql.connector.connect(
     host = 'localhost',
     database = 'gestor_financiero'
 )
-print(db_connection)
