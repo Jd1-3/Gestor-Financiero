@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import Conexion as cn
 
 
 app = Flask(__name__)
@@ -9,9 +8,9 @@ def raiz():
     
     return render_template("index.html")
 
+
 @app.route("/Gastos", methods=["GET"])
 def gastos():
-    
         
     return render_template("gastos.html")
 

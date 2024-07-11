@@ -31,12 +31,12 @@
                 </tr>
             </thead>
             <tbody>
-                {% for  in  %}
+                {% for gasto in gastos %}
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{ gasto.origen }}</td>
+                        <td>{{ gasto.valor }}</td>
+                        <td>{{ gasto.fecha }}</td>
+                        <td>{{ gasto.categoria }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
