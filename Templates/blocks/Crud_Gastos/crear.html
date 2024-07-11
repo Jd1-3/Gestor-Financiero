@@ -1,22 +1,32 @@
-<form action="">
-    <label for="">Origen del Gasto</label>
-    <input type="text">
-    <label for="">Fecha</label>
-    <input type="date">
-    <label for="">Valor</label>
-    <input type="number">
-    <label for="">Descripcion</label>
-    <input type="text">
-    <label for="">Categoria</label>
-    <select name="TipGasto" id="TipGasto">
-        <option value="Transferencia o Retiro">Transferencia o Retiro</option>
-        <option value="Prestamos">Prestamos</option>
-        <option value="Compras">Compras</option>
-        <option value="Renta">Renta</option>
-        <option value="Deuda">Deuda</option>
-        <option value="Servicios">Servicios</option>
-        <option value="Entretenimiento">Entretenimiento</option>
-        <option value="Transporte">Transporte</option>
-    </select>
-    <input type="submit" value="Agregar">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/Gastos/Crear" method = "post">
+        <label for="">Origen del Gasto</label>
+        <input type="text" placeholder="Lugar del Gasto" name = "origen_gasto">
+        <label for="">Fecha</label>
+        <input type="date" name = "fecha_gastos">
+        <label for="">Valor</label>
+        <input type="number" placeholder="Cantidad gastada" name = "valor_gastos">
+        <label for="">Categoria</label>
+        <select name="cat_gasto" id="TipGasto">
+            <option value="Transferencia o Retiro">Transferencia o Retiro</option>
+            <option value="Prestamos">Prestamos</option>
+            <option value="Compras">Compras</option>
+            <option value="Renta">Renta</option>
+            <option value="Deuda">Deuda</option>
+            <option value="Servicios">Servicios</option>
+            <option value="Entretenimiento">Entretenimiento</option>
+            <option value="Transporte">Transporte</option>
+        </select>
+        <input type="submit" value="Agregar">
+    </form>
+
+</body>
+</html>

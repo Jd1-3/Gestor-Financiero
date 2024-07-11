@@ -17,18 +17,24 @@
         <h2>Bienvenido!</h2>  
         <br>  
             <table>
-                <tr>
-                    <th>Ingresos Totales</th>
-                    <th>Gastos Totales</th>
-                    <th>Dinero Restante</th>
-                    <th>Fecha</th>
-                </tr>
-                <tr>
-                    <td><input placeholder="Ingresos Totales" class="input" type="text" /></td>
-                    <td><input placeholder="Gastos Totales" class="input" type="text" /></td>
-                    <td><input placeholder="Dinero Restante" class="input" type="text" /></td>
-                    <td><input placeholder="Fecha" class="input" type="text" /></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Ingresos Totales</th>
+                        <th>Gastos Totales</th>
+                        <th>Dinero Restante</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for mes_año, datos in resultado_final.items() %}
+                    <tr>
+                        <td>{{ datos.ingresos_totales }}</td>
+                        <td>{{ datos.gastos_totales }}</td>
+                        <td>{{ datos.dinero_restante }}</td>
+                        <td>{{ mes_año }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
             </table>
         <br>
             

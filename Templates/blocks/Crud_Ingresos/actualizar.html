@@ -1,11 +1,9 @@
-<form action="">
+<form action="/Ingresos/Actualizar/{{ codigo }}" method="post">
     <label for="">Fuente del Ingreso</label>
-    <input type="text">
+    <input type="text" name="fuente_ingresos" value="{{ data['fuente_ingreso'] }}">
     <label for="">Fecha</label>
-    <input type="date">
+    <input type="date" name="fecha_ingresos" value="{{ data['fecha_ingreso'] }}">
     <label for="">Valor</label>
-    <input type="number">
-    <label for="">Descripcion</label>
-    <input type="text">
-    <input type="submit" value="Agregar">
-</form> 
+    <input type="number" name="valor_ingresos" value="{{ data['valor_ingreso'] }}">
+    <input type="submit" value="Actualizar">
+</form>

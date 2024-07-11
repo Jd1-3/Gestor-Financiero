@@ -1,23 +1,23 @@
-<form action="">
+<form action="/Gastos/Actualizar/{{ codigo }}" method="post">
     <label for="">Origen del Gasto</label>
-    <input type="text">
+    <input type="text" name="origen_gasto" value="{{ data['origen_gasto'] }}">
     <label for="">Fecha</label>
-    <input type="date">
+    <input type="date" name="fecha_gastos" value="{{ data['fecha_gasto'] }}">
     <label for="">Valor</label>
-    <input type="number">
-    <label for="">Descripcion</label>
-    <input type="text">
+    <input type="number" name="valor_gastos" value="{{ data['valor_gasto'] }}">
+
     <label for="">Categoria</label>
-    <select name="TipGasto" id="TipGasto">
-        <option value="Transferencia o Retiro">Transferencia o Retiro</option>
-        <option value="Prestamos">Prestamos</option>
-        <option value="Compras">Compras</option>
-        <option value="Renta">Renta</option>
-        <option value="Deuda">Deuda</option>
-        <option value="Servicios">Servicios</option>
-        <option value="Entretenimiento">Entretenimiento</option>
-        <option value="Transporte">Transporte</option>
+    <select name="cat_gasto" id="TipGasto">
+        <option value="Transferencia o Retiro" {% if data['categoria'] == 'Transferencia o Retiro' %} selected {% endif %}>Transferencia o Retiro</option>
+        <option value="Prestamos" {% if data['categoria'] == 'Prestamos' %} selected {% endif %}>Prestamos</option>
+        <option value="Compras" {% if data['categoria'] == 'Compras' %} selected {% endif %}>Compras</option>
+        <option value="Renta" {% if data['categoria'] == 'Renta' %} selected {% endif %}>Renta</option>
+        <option value="Deuda" {% if data['categoria'] == 'Deuda' %} selected {% endif %}>Deuda</option>
+        <option value="Servicios" {% if data['categoria'] == 'Servicios' %} selected {% endif %}>Servicios</option>
+        <option value="Entretenimiento" {% if data['categoria'] == 'Entretenimiento' %} selected {% endif %}>Entretenimiento</option>
+        <option value="Transporte" {% if data['categoria'] == 'Transporte' %} selected {% endif %}>Transporte</option>
     </select>
-    <input type="submit" value="Agregar">
+
+    <input type="submit" value="Actualizar">
 </form>
 

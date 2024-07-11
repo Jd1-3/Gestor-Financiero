@@ -17,13 +17,14 @@
         <br>
         <h2>Gastos</h2>
         <br>
-        <button> Crear </button>
+        <button><a href="{{url_for('crear_gastos')}}"> Crear </a></button>
         <br>
         <br>
 
         <table>
             <thead>
                 <tr>
+                    <th>Codigo</th>
                     <th>Origen del Gasto</th>
                     <th>Valor</th>
                     <th>Fecha</th>
@@ -31,19 +32,22 @@
                 </tr>
             </thead>
             <tbody>
-                {% for gasto in gastos %}
+                
+                {% for key in keys %}
                     <tr>
-                        <td>{{ gasto.origen }}</td>
-                        <td>{{ gasto.valor }}</td>
-                        <td>{{ gasto.fecha }}</td>
-                        <td>{{ gasto.categoria }}</td>
+                        <td name = "codigo">{{ key }}</td>
+                        <td>{{ gast[loop.index0].origen_gasto }}</td>
+                        <td>{{ gast[loop.index0].valor_gasto }}</td>
+                        <td>{{ gast[loop.index0].fecha_gasto }}</td>
+                        <td>{{ gast[loop.index0].categoria }}</td>
+                        <td><a href="{{url_for('actualizar_gastos', codigo = key )}}">editar</a>
+                            <a href="{{url_for('eliminar_gastos', codigo = key)}}">eliminar</a></td>
                     </tr>
                 {% endfor %}
             </tbody>
-        </table>
 
+        </table>
         <br>
-        <button>siguiente</button>
     </main>
     <br>
     <footer>
