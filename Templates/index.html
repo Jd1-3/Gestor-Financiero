@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/Styles.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Gestor Financiero</title>
 </head>
 <body>
+
+    <div class="container">
     <heading > 
         <h1>Gestor Financiero</h1>
     </heading>
@@ -14,8 +17,9 @@
     <main>
         {% include 'blocks/barra_navegacion.html' %}
         <br>
-        <h2>Bienvenido!</h2>  
+        <h2 class="Titulo">¡BIENVENIDO!</h2>  
         <br>  
+
             <table>
                 <thead>
                     <tr>
@@ -36,6 +40,26 @@
                     {% endfor %}
                 </tbody>
             </table>
+
+            <table class="table table-bordered border-primary">
+               <thead> 
+                <tr>
+                    <th>Ingresos Totales</th>
+                    <th>Gastos Totales</th>
+                    <th>Dinero Restante</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td placeholder="Ingresos Totales" class="input" type="text"/></td>
+                    <td placeholder="Gastos Totales" class="input" type="text" /></td>
+                    <td placeholder="Dinero Restante" class="input" type="text" /></td>
+                    <td placeholder="Fecha" class="input" type="text" /></td>
+                </tr>
+            </tbody>
+              </table>
+
         <br>
             
     </main>
@@ -43,5 +67,7 @@
     <footer>
         ©️ Gestor de Finanzas by Juan Diego Pineda Garcia - Kevin Andres Fuentes Lopez
     </footer>
+</div>
 </body>
+
 </html>

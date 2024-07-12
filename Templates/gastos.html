@@ -8,6 +8,7 @@
 
 </head>
 <body>
+    <div class="container">  
     <heading> 
         <h1>Gestor Financiero</h1>
         <br>
@@ -15,9 +16,15 @@
     </heading>
     <main>
         <br>
-        <h2>Gastos</h2>
+        <div class="imggastos">
+        <h2 class="Gastos">Gastos</h2>
+        <img src=> #poner ruta de la imagen descargada y buscar como ubicarla al lado del titulo
+        </div>
         <br>
         <button><a href="{{url_for('crear_gastos')}}"> Crear </a></button>
+
+        <button class="boton">Crear</button>
+
         <br>
         <br>
 
@@ -48,10 +55,28 @@
 
         </table>
         <br>
+
+            <tr>
+                <th>Origen del Gasto</th>
+                <th>Valor</th>
+                <th>Fecha</th>
+                <th>Categoria</th>
+            </tr>
+            <tr>
+                <td><input placeholder="Origen" class="input" type="text" /></td>
+                <td><input placeholder="$$$$$$$$$" class="input" type="text" /></td>
+                <td><input placeholder="DD/MM/AAAA" class="input" type="text" /></td>
+                <td><input placeholder="Categoria" class="input" type="text" /></td>
+            </tr>
+        </table>
+        <br>
+        <button class="boton">Siguiente</button>
+
     </main>
     <br>
     <footer>
         ©️ Gestor de Finanzas by Juan Diego Pineda Garcia - Kevin Andres Fuentes Lopez
     </footer>
+</div>
 </body>
 </html>
