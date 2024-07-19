@@ -191,7 +191,7 @@ def crear_ingresos():
     return render_template('blocks/Crud_Ingresos/crear.html', )
 
 # funcion actualizar ingresos
-  
+
 @app.route('/Ingresos/Actualizar/<codigo>', methods = ["GET", "POST"])
 def actualizar_ingresos(codigo):
     
@@ -232,4 +232,4 @@ def eliminar_ingresos(codigo):
 #Se ejecuta la aplicacion
 if __name__ == "__main__":
     app.run(debug = True, port = 5000)
-    
+

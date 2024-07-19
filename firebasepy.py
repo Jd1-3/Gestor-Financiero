@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 # Inicializa la app de Firebase con las credenciales y URL de Realtime Database
-cred = credentials.Certificate('gestor-financiero-52c68-firebase-adminsdk-equ8r-3bd471c29d.json')
+cred = credentials.Certificate('gestor-financiero-52c68-firebase-adminsdk-equ8r-d9ad691e4a.json')
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://gestor-financiero-52c68-default-rtdb.firebaseio.com/'
 })
